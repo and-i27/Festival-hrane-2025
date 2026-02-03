@@ -1,0 +1,17 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="120" height="80" viewBox="0 0 120 80" role="img" aria-label="Ulični Okusi logo">
+  <title>Ulični Okusi logo</title>
+  <rect x="4" y="4" width="112" height="72" rx="12" fill="#111827"/>
+  <rect x="14" y="48" width="80" height="18" rx="4" fill="#ffc107"/>
+  <rect x="20" y="34" width="38" height="14" rx="3" fill="#ffd84d"/>
+  <rect x="62" y="30" width="22" height="18" rx="3" fill="#ffc107"/>
+  <rect x="66" y="34" width="10" height="10" rx="2" fill="#111827"/>
+  <rect x="22" y="38" width="12" height="6" rx="2" fill="#111827"/>
+  <rect x="38" y="38" width="14" height="6" rx="2" fill="#111827"/>
+  <circle cx="30" cy="67" r="6" fill="#111827"/>
+  <circle cx="30" cy="67" r="2" fill="#ffd84d"/>
+  <circle cx="74" cy="67" r="6" fill="#111827"/>
+  <circle cx="74" cy="67" r="2" fill="#ffd84d"/>
+  <path d="M92 40c4-2 8-2 12 0" stroke="#ffd84d" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M94 30c4-2 8-2 12 0" stroke="#ffd84d" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M96 20c4-2 8-2 12 0" stroke="#ffd84d" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>

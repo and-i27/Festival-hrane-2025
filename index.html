@@ -7,6 +7,8 @@
 
   <!-- Bootstrap 5.3 CSS (CDN) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
   <style>
     body { background: #f8f7f3; }
@@ -16,49 +18,121 @@
     .badge-fest { background: #0f172a; }
   </style>
 </head>
-<body>
+<body id="top">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Ulični Okusi</a>
+      <a class="navbar-brand d-flex align-items-center" href="#top">
+        <img src="logo.svg" alt="Ulični Okusi" height="40" class="d-inline-block">
+        <span class="ms-2 fw-bold">Ulični Okusi</span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="nav">
         <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#top">Domov</a></li>
           <li class="nav-item"><a class="nav-link" href="#o-festivalu">O festivalu</a></li>
-          <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
-          <li class="nav-item"><a class="nav-link" href="#ponudba">Ponudba</a></li>
-          <li class="nav-item"><a class="nav-link" href="#vstopnice">Vstopnice</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <section class="hero py-5">
-    <div class="container py-4">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-7">
-          <span class="badge badge-fest text-white mb-3">9.–11. maj 2026 • Velenje</span>
-          <h1 class="display-5 fw-bold">Festival ulične hrane, ki diši po svetu</h1>
-          <p class="lead mb-4">
-            Ulični Okusi združuje najboljše food trucke, kuharske mojstre in glasbo v središču mesta.
-            Pridi lačen, odidi navdušen.
-          </p>
-          <a class="btn btn-dark btn-lg me-2" href="#vstopnice">Kupi vstopnico</a>
-          <a class="btn btn-outline-dark btn-lg" href="#program">Poglej program</a>
+  <section class="py-0">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1743187374807-fbad59171250?fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.0.3&q=60&w=3000" class="d-block w-100" alt="So?en burger" style="height: 70vh; object-fit: cover;">
+          <div class="carousel-caption text-start bg-dark bg-opacity-50 rounded-3 p-3 p-md-4">
+            <h1 class="display-5 fw-bold">Najboljši burgerji v mestu</h1>
+            <p>Sočno, hrustljavo in pripravljeno na tvoj okus.</p>
+            <a class="btn btn-warning btn-lg" href="#ponudba">Poglej ponudbo</a>
+          </div>
         </div>
-        <div class="col-lg-5">
-          <div class="card shadow-sm">
+        <div class="carousel-item">
+          <img src="https://images.pexels.com/photos/8305574/pexels-photo-8305574.jpeg?cs=srgb&dl=pexels-amanda-lim-5074906-8305574.jpg&fm=jpg" class="d-block w-100" alt="Azijska skleda" style="height: 70vh; object-fit: cover;">
+          <div class="carousel-caption text-start bg-dark bg-opacity-50 rounded-3 p-3 p-md-4">
+            <h1 class="display-5 fw-bold">Azijski okusi, ki presenetijo</h1>
+            <p>Dišeče juhe, rezanci in sveži dodatki.</p>
+            <a class="btn btn-warning btn-lg" href="#ponudba">Poglej ponudbo</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.pexels.com/photos/29042369/pexels-photo-29042369.jpeg?cs=srgb&dl=pexels-snappr-29042369.jpg&fm=jpg" class="d-block w-100" alt="Sladice in vaflji" style="height: 70vh; object-fit: cover;">
+          <div class="carousel-caption text-start bg-dark bg-opacity-50 rounded-3 p-3 p-md-4">
+            <h1 class="display-5 fw-bold">Sladice za konec dneva</h1>
+            <p>Vaflji, čokolada in sezonsko sadje.</p>
+            <a class="btn btn-warning btn-lg" href="#ponudba">Poglej ponudbo</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Prejšnja</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Naslednja</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Kaj ponujamo -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Kaj ponujamo?</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <img src="https://images.unsplash.com/photo-1743187374807-fbad59171250?fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.0.3&q=60&w=1200" class="img-fluid rounded-3 mb-3" alt="Burgerji" loading="lazy">
+          <h5>Burgerji</h5>
+          <p>Sočni burgerji z domačimi omakami in svežimi dodatki.</p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <img src="https://images.pexels.com/photos/8305574/pexels-photo-8305574.jpeg?cs=srgb&dl=pexels-amanda-lim-5074906-8305574.jpg&fm=jpg" class="img-fluid rounded-3 mb-3" alt="Azijska kuhinja" loading="lazy">
+          <h5>Azijska kuhinja</h5>
+          <p>Dišeče juhe, rezanci in wok jedi polnega okusa.</p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <img src="https://images.pexels.com/photos/29042369/pexels-photo-29042369.jpeg?cs=srgb&dl=pexels-snappr-29042369.jpg&fm=jpg" class="img-fluid rounded-3 mb-3" alt="Sladice" loading="lazy">
+          <h5>Sladice</h5>
+          <p>Vaflji, čokoladne poslastice in sezonsko sadje.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Glavni kuharji -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Glavni kuharji</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1759521296144-fe6f2d2dc769?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1200" class="card-img-top" alt="Kuhar Marko" loading="lazy">
             <div class="card-body">
-              <h5 class="card-title">Hitre informacije</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Lokacija: Mestni park Velenje</li>
-                <li class="list-group-item">Ure: 11:00–23:00</li>
-                <li class="list-group-item">Več kot 25 ponudnikov</li>
-              </ul>
+              <h5 class="card-title">Marko Kovač</h5>
+              <p class="card-text">Specialiteta: mojster za rebrca</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1726499357005-00182c6233d6?fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1200" class="card-img-top" alt="Kuharica Ana" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Ana Novak</h5>
+              <p class="card-text">Specialiteta: azijska fuzija</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://images.pexels.com/photos/27436151/pexels-photo-27436151.jpeg?cs=srgb&dl=pexels-indraprojectsofficial-27436151.jpg&fm=jpg" class="card-img-top" alt="Kuhar Luka" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Luka Zupan</h5>
+              <p class="card-text">Specialiteta: ulična klasika</p>
             </div>
           </div>
         </div>
@@ -207,10 +281,23 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-4 border-top bg-white">
-    <div class="container d-flex flex-wrap justify-content-between align-items-center">
-      <p class="mb-0">© 2026 Ulični Okusi</p>
-      <small>Kontakt: info@ulicniokusi.si</small>
+  <footer id="kontakt" class="py-4 mt-5 bg-dark text-white">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-3">
+      <div>
+        <p class="mb-0">2026 Ulični Okusi</p>
+        <small>Kontakt: info@ulicniokusi.si</small>
+      </div>
+      <div class="d-flex gap-3">
+        <a class="text-white fs-4" href="https://instagram.com" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a class="text-white fs-4" href="https://facebook.com" aria-label="Facebook">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a class="text-white fs-4" href="https://tiktok.com" aria-label="TikTok">
+          <i class="bi bi-tiktok"></i>
+        </a>
+      </div>
     </div>
   </footer>
 
