@@ -1,0 +1,12 @@
+body { background: #f8f7f3; }
+.hero {
+  background: linear-gradient(135deg, #ff8a00 0%, #ffb300 50%, #ffe0a3 100%);
+}
+.badge-fest { background: #0f172a; }
+.hero-img {
+  height: 70vh;
+  object-fit: cover;
+}
+.map-embed {
+  border: 0;
+}

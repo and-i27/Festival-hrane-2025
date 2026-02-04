@@ -9,14 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-  <style>
-    body { background: #f8f7f3; }
-    .hero {
-      background: linear-gradient(135deg, #ff8a00 0%, #ffb300 50%, #ffe0a3 100%);
-    }
-    .badge-fest { background: #0f172a; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
 
@@ -27,7 +20,7 @@
         <img src="logo.svg" alt="Ulični Okusi" height="40" class="d-inline-block">
         <span class="ms-2 fw-bold">Ulični Okusi</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="nav">
@@ -45,7 +38,7 @@
     <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://images.unsplash.com/photo-1743187374807-fbad59171250?fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.0.3&q=60&w=3000" class="d-block w-100" alt="So?en burger" style="height: 70vh; object-fit: cover;">
+          <img src="https://images.unsplash.com/photo-1743187374807-fbad59171250?fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.0.3&q=60&w=3000" class="d-block w-100 hero-img" alt="So?en burger">
           <div class="carousel-caption text-start bg-dark bg-opacity-50 rounded-3 p-3 p-md-4">
             <h1 class="display-5 fw-bold">Najboljši burgerji v mestu</h1>
             <p>Sočno, hrustljavo in pripravljeno na tvoj okus.</p>
@@ -53,7 +46,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="https://images.pexels.com/photos/8305574/pexels-photo-8305574.jpeg?cs=srgb&dl=pexels-amanda-lim-5074906-8305574.jpg&fm=jpg" class="d-block w-100" alt="Azijska skleda" style="height: 70vh; object-fit: cover;">
+          <img src="https://images.pexels.com/photos/8305574/pexels-photo-8305574.jpeg?cs=srgb&dl=pexels-amanda-lim-5074906-8305574.jpg&fm=jpg" class="d-block w-100 hero-img" alt="Azijska skleda">
           <div class="carousel-caption text-start bg-dark bg-opacity-50 rounded-3 p-3 p-md-4">
             <h1 class="display-5 fw-bold">Azijski okusi, ki presenetijo</h1>
             <p>Dišeče juhe, rezanci in sveži dodatki.</p>
@@ -61,7 +54,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="https://images.pexels.com/photos/29042369/pexels-photo-29042369.jpeg?cs=srgb&dl=pexels-snappr-29042369.jpg&fm=jpg" class="d-block w-100" alt="Sladice in vaflji" style="height: 70vh; object-fit: cover;">
+          <img src="https://images.pexels.com/photos/29042369/pexels-photo-29042369.jpeg?cs=srgb&dl=pexels-snappr-29042369.jpg&fm=jpg" class="d-block w-100 hero-img" alt="Sladice in vaflji">
           <div class="carousel-caption text-start bg-dark bg-opacity-50 rounded-3 p-3 p-md-4">
             <h1 class="display-5 fw-bold">Sladice za konec dneva</h1>
             <p>Vaflji, čokolada in sezonsko sadje.</p>
@@ -145,27 +138,22 @@
     <div class="container">
       <div class="row g-4 align-items-center">
         <div class="col-lg-6">
-          <h2 class="fw-bold">O festivalu</h2>
-          <p>
-            Ulični Okusi je tridnevni dogodek, kjer se srečajo street‑food klasike in nove kulinarične
-            ideje. Dogodek je družinam prijazen, z delavnicami za otroke in večernimi koncerti.
-          </p>
-          <div class="row text-center mt-4">
-            <div class="col-4"><h3 class="fw-bold">25+</h3><small>ponudnikov</small></div>
-            <div class="col-4"><h3 class="fw-bold">3</h3><small>odri</small></div>
-            <div class="col-4"><h3 class="fw-bold">15</h3><small>koncertov</small></div>
-          </div>
+          <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&fm=jpg&q=60&w=1400" class="img-fluid rounded-3" alt="Dogajanje na ulici" loading="lazy">
         </div>
         <div class="col-lg-6">
-          <div class="ratio ratio-16x9">
-            <div class="bg-dark text-white d-flex align-items-center justify-content-center">
-              Video / slika festivala
-            </div>
-          </div>
+          <h2 class="fw-bold">Naša zgodba</h2>
+          <p>
+            Festival Ulični Okusi se je začel leta 2018 kot majhen dogodek lokalnih ponudnikov in je zrasel v
+            tridnevno srečanje, kjer se srečajo najboljši ulični okusi in glasba v središču mesta.
+          </p>
+          <p>
+            Naša vizija je preprosta: povezovati ljudi z lokalno hrano, svežimi sestavinami in pristnimi okusi,
+            ki spoštujejo tradicijo ter spodbujajo ustvarjalnost mladih kuharskih ekip.
+          </p>
         </div>
       </div>
     </div>
-  </section>
+</section>
 
   <!-- Program -->
   <section id="program" class="py-5 bg-white">
@@ -245,34 +233,41 @@
   <section id="vstopnice" class="py-5 bg-white">
     <div class="container">
       <h2 class="fw-bold mb-4">Vstopnice</h2>
+      <p class="text-muted">Izberi tip vstopnice:</p>
       <div class="row g-3">
-        <div class="col-md-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Dnevna</h5>
-              <p class="display-6 fw-bold">7 €</p>
-              <p>Vstop za en dan.</p>
-              <button type="button" class="btn btn-dark w-100">Izberi</button>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 p-3">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="ticketType" id="ticketDay" value="Dnevna" form="reservationForm" required checked>
+              <label class="form-check-label fw-bold" for="ticketDay">Dnevna</label>
+            </div>
+            <div class="mt-2">
+              <div class="display-6 fw-bold">7 €</div>
+              <div>Vstop za en dan.</div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-dark">
-            <div class="card-body">
-              <h5 class="card-title">Vikend</h5>
-              <p class="display-6 fw-bold">15 €</p>
-              <p>Vstop za vse tri dni.</p>
-              <button type="button" class="btn btn-dark w-100">Najboljša izbira</button>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 p-3 border-dark">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="ticketType" id="ticketWeekend" value="Vikend" form="reservationForm" required>
+              <label class="form-check-label fw-bold" for="ticketWeekend">Vikend</label>
+            </div>
+            <div class="mt-2">
+              <div class="display-6 fw-bold">15 €</div>
+              <div>Vstop za vse tri dni.</div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Družinska</h5>
-              <p class="display-6 fw-bold">22 €</p>
-              <p>2 odrasla + 2 otroka.</p>
-              <button type="button" class="btn btn-dark w-100">Izberi</button>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 p-3">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="ticketType" id="ticketFamily" value="Druzinska" form="reservationForm" required>
+              <label class="form-check-label fw-bold" for="ticketFamily">Družinska</label>
+            </div>
+            <div class="mt-2">
+              <div class="display-6 fw-bold">22 €</div>
+              <div>2 odrasla + 2 otroka.</div>
             </div>
           </div>
         </div>
@@ -280,8 +275,69 @@
     </div>
   </section>
 
+  <!-- Rezervacija -->
+  <section id="rezervacija" class="py-5 bg-white">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Rezerviraj mizo</h2>
+          <form id="reservationForm" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Ime in priimek</label>
+              <input type="text" class="form-control" id="fullName" required>
+              <div class="invalid-feedback">Vnesi ime in priimek.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+              <div class="invalid-feedback">Vnesi veljaven email.</div>
+            </div>
+            <div class="mb-3">
+              <label for="people" class="form-label">Število oseb</label>
+              <select class="form-select" id="people" required>
+                <option value="" selected disabled>Izberi...</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+              </select>
+              <div class="invalid-feedback">Izberi število oseb.</div>
+            </div>
+            <div class="mb-3">
+              <label for="dateTime" class="form-label">Datum in ura</label>
+              <input type="datetime-local" class="form-control" id="dateTime" required>
+              <div class="invalid-feedback">Izberi datum in uro.</div>
+            </div>
+            <button type="submit" class="btn btn-dark">Pošlji</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="kontakt" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Kontakt</h2>
+          <ul class="list-unstyled mb-4">
+            <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Trg mladosti 1, 3320 Velenje</li>
+            <li class="mb-2"><i class="bi bi-telephone me-2"></i>+386 3 123 45 67</li>
+            <li class="mb-2"><i class="bi bi-envelope me-2"></i>info@ulicniokusi.si</li>
+          </ul>
+          <div class="ratio ratio-16x9">
+            <iframe title="Google Zemljevid" class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2749.032876487873!2d15.110623!3d46.359999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47656f1a4f7fd77f%3A0x8e2a6a1a0aaf7f4c!2sVelenje!5e0!3m2!1ssl!2ssi!4v0000000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
-  <footer id="kontakt" class="py-4 mt-5 bg-dark text-white">
+  <footer id="footer" class="py-4 mt-5 bg-dark text-white">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-3">
       <div>
         <p class="mb-0">2026 Ulični Okusi</p>
@@ -303,5 +359,26 @@
 
   <!-- Bootstrap 5.3 JS (CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (() => {
+      'use strict';
+
+      const forms = document.querySelectorAll('.needs-validation');
+      Array.from(forms).forEach((form) => {
+        form.addEventListener('submit', (event) => {
+          event.preventDefault();
+          if (!form.checkValidity()) {
+            event.stopPropagation();
+            alert('Neuspešno oddano. Preveri označena polja.');
+          } else {
+            alert('Uspešno oddano. Hvala za rezervacijo!');
+            form.reset();
+            form.classList.remove('was-validated');
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+  </script>
 </body>
 </html>
